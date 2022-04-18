@@ -1,0 +1,33 @@
+{
+    "name": "AddBlocker 1.1",
+    "version": "1.1",
+    "manifest_version": 2,
+    "author": "Kannav Sharma",
+    "description": "One Stop Solution of Unwanted Advertisements/ distractions.",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts":[{
+        "js":["youTubeAddSkip.js"],
+        "run_at":"document_idle",
+        "matches":  ["<all_urls>"]
+    }],
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon":"icon.png"
+    },
+    "background": {
+        "scripts": [
+            "main.js"
+        ]
+    }
+}
