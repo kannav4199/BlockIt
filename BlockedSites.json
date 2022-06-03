@@ -1,5 +1,8 @@
 {
  "sites":[
+"*://*.googleads.g.doubleclick.net/*",
+"https://*.googlesyndication.com/*",
+"*://*.googleads.com/*", 
 "*://*.googlesyndication.com/*", 
 "*://*.analytics.163.com/*",
 "*://*.mt.analytics.163.com/*",
